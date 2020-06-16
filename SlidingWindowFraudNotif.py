@@ -27,13 +27,13 @@ def activityNotifications(expenditure, d):
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    nd = raw_input().split()
+    nd = input().split()
 
     n = int(nd[0])
 
     d = int(nd[1])
 
-    expenditure = map(int, raw_input().rstrip().split())
+    expenditure = map(int, input().rstrip().split())
 
     result = activityNotifications(expenditure, d)
 
